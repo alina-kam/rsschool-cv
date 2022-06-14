@@ -21,6 +21,18 @@ body{
     box-sizing: border-box;
 }
 
+ul{
+    list-style: none;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size: 1.3em;
+}
+
 .header{
     border: 1px solid red;
 }
@@ -31,7 +43,19 @@ body{
 }
 
 .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
     border: 1px solid red;
+}
+
+.section-title{
+    margin: 10px 30px;
+}
+
+#contacts .section-title{
+    text-align: center;
 }
 
 .container{
@@ -39,14 +63,18 @@ body{
     margin: 0 auto;
 }
 
-.main-container{
+.container-main{
     display: flex;
 }
 
+.main-descr{
+    padding-left: 10px;
+}
 .nav-list{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 0px;
     list-style: none;
 }
 
@@ -60,11 +88,98 @@ body{
 
 .nav-link:hover {
     color: red;
-
   }
 
-
 .aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
     border: 1px solid red;
     width: 30%;
 }
+
+.skills-block{
+    padding: 10px;
+}
+.skills-item{
+    display: flex;
+}
+
+.skills-item p{
+    margin: 0;
+    width: 90px;
+    margin-bottom: 5px;
+}
+
+.skills-level{
+    display: flex;
+    align-items: center;
+}
+
+.skills-marker{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 5px;
+}
+
+.pre-code{
+    background-color: #f5f5f5;
+    font-size: 14px;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+}
+
+.contacts{
+    padding-left: 10px;
+}
+.contacts-item{
+    margin-bottom: 5px;
+}
+
+.education{
+    padding-left: 10px;
+}
+
+.profile-photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid red;
+    border-radius: 50%;
+}
+
+.container-centered{
+    width: 1024px;
+    margin: 20px auto;
+}
+
+.edu-item{
+    font-weight: 700;
+}
+.edu-name{
+    display:flex;
+    margin-top: 10px;
+}
+ .edu-item p{
+    font-weight: 400;
+    margin: 3px 10px;
+ }
+
+.footer-github{
+    color: black;
+    text-decoration: none;
+}
+
+.footer-rss{
+    height: 30px;
+}
+
